@@ -1,0 +1,26 @@
+# 美股盤後報告專案的 conda 環境
+# 建立：conda env create -f environment.yml
+# 更新：conda env update -f environment.yml --prune
+# 註冊 Jupyter kernel：
+#   conda run -n us-report python -m ipykernel install --user --name us-report --display-name "Python (us-report)"
+name: us-report
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  # 資料
+  - yfinance
+  - pandas
+  - requests
+  - feedparser
+  - python-dotenv
+  - lxml               # pandas.read_html（S&P 500 成分股）
+  - beautifulsoup4
+  - tzdata             # Windows 的 zoneinfo 需要
+  # Jupyter
+  - jupyter
+  - ipykernel
+  - nbconvert
+  - nbclient
+  - nbformat

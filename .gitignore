@@ -3,3 +3,5 @@
 .ipynb_checkpoints/
 __pycache__/
 news_digest_*.md
+# 自動產生的快取
+sp500_constituents.csv

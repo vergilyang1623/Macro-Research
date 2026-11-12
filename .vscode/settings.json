@@ -1,5 +1,8 @@
 {
     "python.terminal.useEnvFile": true,
     "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda"
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python.defaultInterpreterPath": "C:\\ProgramData\\anaconda3\\envs\\us-report\\python.exe",
+    "python.condaPath": "C:\\ProgramData\\anaconda3\\Scripts\\conda.exe",
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
